@@ -1,6 +1,6 @@
 # 💰 BudgetBuddy Pro
 
-**A web-based budget tracking application built with HTML, CSS, JavaScript, Node.js, and Express.**
+**A web-based budget tracking application built with HTML, CSS, JavaScript.**
 
 BudgetBuddy Pro helps users manage personal finances effectively, providing a simple and responsive interface to **record, view, and analyze income and expenses**. 📊
 
@@ -58,9 +58,8 @@ The app works on both **desktop and mobile devices** using a fully responsive de
 - Font Awesome icons 🎨  
 - Chart.js for analytics 📊
 
-**Backend**:  
-- Node.js with Express.js 🟢  
-- JSON file as local data storage (initial implementation, scalable to MongoDB or SQLite) 🗄️
+**Backend / Storage**:  
+- No backend server — uses **browser localStorage** for storing transactions 💾  
 
 **Design Goals**:  
 - Lightweight and minimal interface ✨  
