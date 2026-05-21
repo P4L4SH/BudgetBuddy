@@ -3,8 +3,6 @@
 // PostgreSQL when DATABASE_URL is set (Render)
 // ============================================
 
-const Database = require('better-sqlite3');
-
 // ============================================
 // Choose which database to use
 // If DATABASE_URL exists, we're on Render
@@ -78,6 +76,7 @@ if (process.env.DATABASE_URL) {
   // ============================================
   // SQLite for local development
   // ============================================
+  const Database = require('better-sqlite3');
   db = new Database('budget.db');
 
   // ============================================
