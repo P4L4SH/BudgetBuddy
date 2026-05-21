@@ -1,0 +1,7 @@
+node_modules/
+dist/
+budget.db
+.env
+vite.log
+vite.err
+*.db

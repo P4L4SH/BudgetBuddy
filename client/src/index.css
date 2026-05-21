@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   Light theme (default)
+   ============================================ */
+:root {
+  --theme-bg: #f4f4f5;
+  --theme-card: #ffffff;
+  --theme-input: #ffffff;
+  --theme-border: #e4e4e7;
+  --theme-border2: #d4d4d8;
+  --theme-overlay: #f4f4f5;
+  --theme-overlay2: #e4e4e7;
+  --theme-overlay3: #d4d4d8;
+  --theme-header: #f4f4f5;
+  --theme-active: #d4d4d8;
+  --theme-activeText: #18181b;
+  --theme-dot: #22c55e;
+  --txt-main: #18181b;
+  --txt-sec: #52525b;
+  --txt-mute: #71717a;
+  --txt-vmute: #a1a1aa;
+  --txt-place: #a1a1aa;
+  --scroll-track: #e4e4e7;
+  --scroll-thumb: #a1a1aa;
+  --chart-tooltip: #ffffff;
+  --chart-border: #e4e4e7;
+  --legend-color: #71717a;
+}
+
+/* ============================================
+   Dark theme
+   ============================================ */
+[data-theme="dark"] {
+  --theme-bg: #1c1c1c;
+  --theme-card: #252525;
+  --theme-input: #1c1c1c;
+  --theme-border: rgba(255,255,255,0.05);
+  --theme-border2: rgba(255,255,255,0.1);
+  --theme-overlay: rgba(255,255,255,0.05);
+  --theme-overlay2: rgba(255,255,255,0.1);
+  --theme-overlay3: rgba(255,255,255,0.2);
+  --theme-header: rgba(28,28,28,0.5);
+  --theme-active: #333333;
+  --theme-activeText: #ffffff;
+  --theme-dot: #22c55e;
+  --txt-main: #ffffff;
+  --txt-sec: #a1a1aa;
+  --txt-mute: #71717a;
+  --txt-vmute: #52525b;
+  --txt-place: #52525b;
+  --scroll-track: #1c1c1c;
+  --scroll-thumb: #333;
+  --chart-tooltip: #1c1c1c;
+  --chart-border: rgba(255,255,255,0.1);
+  --legend-color: #a1a1aa;
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scroll-track); }
+::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ============================================
+   Smooth transitions for theme switch
+   ============================================ */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
